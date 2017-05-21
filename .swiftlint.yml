@@ -73,6 +73,8 @@ identifier_name:
     - URL
     - hex
     - top
+    - map
+    - Map
 
 line_length: 140
 type_body_length:

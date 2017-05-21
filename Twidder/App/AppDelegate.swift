@@ -9,13 +9,25 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  private lazy var applicationCoordinator: ApplicationCoordinator = {
+    guard let wd = self.window else {
+      fatalError("Now window available, please check application didFinishLaunchingWithOptions")
+    }
+    return ApplicationCoordinator(window: wd)
+  }()
+  
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    return true
+    window = UIWindow(frame: UIScreen.main.bounds)
+    guard let wd = window else {
+      return false
+    }
+    applicationCoordinator = ApplicationCoordinator(window: wd)
+    applicationCoordinator.start()
+    return applicationCoordinator.open(viewController: .map, animated: true)
   }
 
   func applicationWillTerminate(_ application: UIApplication) {
