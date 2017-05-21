@@ -1,0 +1,143 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - ./vendor
+
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - missing_docs
+  - closure_end_indentation
+  - closure_spacing
+  - conditional_returns_on_newline
+  - force_unwrapping
+  - opening_brace
+  - overridden_super_call
+  - private_outlet
+  - prohibited_super_call
+  - switch_case_on_newline
+  - legacy_constant
+  - explicit_init
+
+private_outlet:
+  severity: error
+force_unwrapping: 
+  severity: error
+force_cast: error
+force_try: error
+vertical_whitespace: 
+  max_empty_lines: 1
+colon: 
+  severity: error  
+statement_position: 
+  severity: error
+trailing_newline: warning
+trailing_semicolon: error
+comma: error
+opening_brace: error
+empty_count: error
+legacy_constructor: error
+legacy_constant: error
+
+type_name:
+  min_length:
+    error: 4
+  max_length: # warning and error
+    warning: 55
+    error: 60
+  excluded: 
+    - iPhone
+    - URI
+
+identifier_name:
+  max_length:
+    warning: 55
+    error: 60
+  min_length: # only min_length
+    error: 4 # only error
+  excluded: # excluded via string array
+    - row
+    - key
+    - id
+    - url
+    - uri
+    - db
+    - bar
+    - red
+    - lhs
+    - rhs
+    - tag
+    - rs
+    - URI
+    - URL
+    - hex
+    - top
+
+line_length: 140
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+file_length:
+  warning: 300
+  error: 500
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
+
+custom_rules:
+  marks_empty_space:
+    name: "Marks"
+    regex: "(//MARK)"
+    message: "There should be an empty space between // and the MARK."
+    severity: warning
+  marks_style:
+    name: "Marks"
+    regex: "(// MARK: -?[a-zA-Z0-9])"
+    message: "Marks should follow the following structure: // MARK: - Comment."
+    severity: warning
+  no_print:                
+    name: "No print rule"  
+    regex: "(print)"       
+    message: "There should be no prints, use dump instead"
+    severity: error
+  comments_space:
+    name: "Space After Comment"
+    regex: '(^ *//\w+)'
+    message: "There should be a space after //"
+    severity: warning
+  comments_capitalized_ignore_possible_code:
+    name: "Capitalize First Word In Comment"
+    regex: "(^ +// +(?!swiftlint)[a-z]+)"
+    message: "The first word of a comment should be capitalized"
+    severity: warning
+  comments_capitalized_find_possible_code:
+    name: "Catch Commented Out Code"
+    regex: "(^ *// +(?!swiftlint)[a-z]+)"
+    message: "The first word of a comment should be capitalized"
+    severity: warning
+  empty_first_line:
+    name: "Empty First Line"
+    regex: '(^[ a-zA-Z ]*(?:protocol|extension|class|struct) (?!(?:var|let))[ a-zA-Z:]*\{\n *\S+)'
+    message: "There should be an empty line after a declaration"
+    severity: error
+  empty_line_after_guard:
+    name: "Empty Line After Guard"
+    regex: '(^ *guard[ a-zA-Z0-9=?.\(\),><!]*\{[ a-zA-Z0-9=?.\(\),><!]*\}\n *(?!(?:return|guard))\S+)'
+    message: "There should be an empty line after a guard"
+    severity: error
+  empty_line_after_super:
+    name: "Empty Line After Super"
+    regex: '(^ *super\.[ a-zA-Z0-9=?.\(\)\{\}:,><!]*\n *(?!(?:\}|return))\S+)'
+    message: "There should be an empty line after super"
+    severity: warning
+  unnecessary_type:
+    name: "Unnecessary Type"
+    regex: '[ a-zA-Z0-9]*(?:let|var) [ a-zA-Z0-9]*: ([a-zA-Z0-9]*)[\? ]*= \1'
+    message: "Type Definition Not Needed"
+    severity: error
+  todo_or_fixme:
+    regex: "(todo|fixme)"
+    match_kinds: comment
+    serverity: warning
+
