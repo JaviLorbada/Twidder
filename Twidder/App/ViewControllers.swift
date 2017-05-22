@@ -12,7 +12,7 @@ import SafariServices
 
 enum ViewControllers {
   
-  case map
+  case map(appCoordinator: ApplicationCoordinator)
   case browser(url: URL)
 }
 
@@ -21,8 +21,8 @@ extension ViewControllers {
   
   func view() -> UIViewController {
     switch self {
-    case .map:
-      return MapViewController(viewModel: MapViewModel())
+    case .map(let appCoordinator):
+      return MapViewController(viewModel: MapViewModel(coordinator: appCoordinator))
     case .browser(let url):
       return SFSafariViewController(url: url)
     }

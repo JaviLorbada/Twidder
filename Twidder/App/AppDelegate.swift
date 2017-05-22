@@ -14,7 +14,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   private lazy var applicationCoordinator: ApplicationCoordinator = {
     guard let wd = self.window else {
-      fatalError("Now window available, please check application didFinishLaunchingWithOptions")
+      fatalError("No window available, please check application didFinishLaunchingWithOptions")
     }
     return ApplicationCoordinator(window: wd)
   }()
@@ -27,9 +27,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     applicationCoordinator = ApplicationCoordinator(window: wd)
     applicationCoordinator.start()
-    return applicationCoordinator.open(viewController: .map, animated: true)
+    return applicationCoordinator.open(viewController: .map(appCoordinator: applicationCoordinator), animated: true)
   }
-
+  
   func applicationWillTerminate(_ application: UIApplication) {
 
   }
