@@ -79,7 +79,7 @@ final class MapViewController: UIViewController {
     }
     
     searchBar.reactive.isUserInteractionEnabled <~ Signal.merge([viewModel.authorizationFailed.signal.map { _ in return false },
-                                                                 viewModel.authorizationSuccessful.signal.map { _ in return true }])
+                                                                 viewModel.location.signal.map { _ in return true }])
     
     viewModel.authorizationFailed.signal
       .observe(on: QueueScheduler.main)
