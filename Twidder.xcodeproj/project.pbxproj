@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93F56571ED24A1C0025E814 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93F56561ED24A1C0025E814 /* Unbox.framework */; };
 		D9B206011ED192E000F5BE53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B205F71ED192E000F5BE53 /* AppDelegate.swift */; };
 		D9B206021ED192E000F5BE53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B205F91ED192E000F5BE53 /* Assets.xcassets */; };
 		D9B206031ED192E000F5BE53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B205FA1ED192E000F5BE53 /* LaunchScreen.storyboard */; };
 		D9B206061ED192E000F5BE53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B206001ED192E000F5BE53 /* MapViewController.swift */; };
 		D9B206081ED1976000F5BE53 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B206071ED1976000F5BE53 /* AppCoordinator.swift */; };
 		D9B2060A1ED1995000F5BE53 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B206091ED1995000F5BE53 /* ViewControllers.swift */; };
+		D9B206131ED1B56F00F5BE53 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B2060F1ED1B56F00F5BE53 /* ReactiveCocoa.framework */; };
+		D9B206141ED1B56F00F5BE53 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B206101ED1B56F00F5BE53 /* ReactiveSwift.framework */; };
+		D9B206151ED1B56F00F5BE53 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B206111ED1B56F00F5BE53 /* Result.framework */; };
+		D9B206161ED1B56F00F5BE53 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B206121ED1B56F00F5BE53 /* OAuthSwift.framework */; };
+		D9B206191ED1B60D00F5BE53 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B206181ED1B60D00F5BE53 /* MapViewModel.swift */; };
+		D9B206211ED1E82400F5BE53 /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B206201ED1E82400F5BE53 /* LocationButton.swift */; };
+		D9B206251ED2020E00F5BE53 /* AlertData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B206241ED2020E00F5BE53 /* AlertData.swift */; };
+		D9E788C01ED2BE1100C7898B /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788BA1ED2BE1100C7898B /* TwitterAPI.swift */; };
+		D9E788C11ED2BE1100C7898B /* Geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788BC1ED2BE1100C7898B /* Geolocation.swift */; };
+		D9E788C21ED2BE1100C7898B /* Statuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788BD1ED2BE1100C7898B /* Statuses.swift */; };
+		D9E788C31ED2BE1100C7898B /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788BE1ED2BE1100C7898B /* Tweet.swift */; };
+		D9E788C41ED2BE1100C7898B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788BF1ED2BE1100C7898B /* User.swift */; };
+		D9E788C61ED2BE1F00C7898B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788C51ED2BE1F00C7898B /* LocationService.swift */; };
+		D9E788C81ED3038000C7898B /* TwidderPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788C71ED3038000C7898B /* TwidderPointAnnotation.swift */; };
+		D9E788CA1ED3178A00C7898B /* TwidderPinAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E788C91ED3178A00C7898B /* TwidderPinAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D93F56561ED24A1C0025E814 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
 		D9B205E01ED190F900F5BE53 /* Twidder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twidder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B205F71ED192E000F5BE53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B205F91ED192E000F5BE53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +41,21 @@
 		D9B206001ED192E000F5BE53 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D9B206071ED1976000F5BE53 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D9B206091ED1995000F5BE53 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		D9B2060F1ED1B56F00F5BE53 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		D9B206101ED1B56F00F5BE53 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		D9B206111ED1B56F00F5BE53 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		D9B206121ED1B56F00F5BE53 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		D9B206181ED1B60D00F5BE53 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		D9B206201ED1E82400F5BE53 /* LocationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
+		D9B206241ED2020E00F5BE53 /* AlertData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertData.swift; sourceTree = "<group>"; };
+		D9E788BA1ED2BE1100C7898B /* TwitterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
+		D9E788BC1ED2BE1100C7898B /* Geolocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geolocation.swift; sourceTree = "<group>"; };
+		D9E788BD1ED2BE1100C7898B /* Statuses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statuses.swift; sourceTree = "<group>"; };
+		D9E788BE1ED2BE1100C7898B /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		D9E788BF1ED2BE1100C7898B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9E788C51ED2BE1F00C7898B /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D9E788C71ED3038000C7898B /* TwidderPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwidderPointAnnotation.swift; sourceTree = "<group>"; };
+		D9E788C91ED3178A00C7898B /* TwidderPinAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwidderPinAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F56571ED24A1C0025E814 /* Unbox.framework in Frameworks */,
+				D9B206131ED1B56F00F5BE53 /* ReactiveCocoa.framework in Frameworks */,
+				D9B206141ED1B56F00F5BE53 /* ReactiveSwift.framework in Frameworks */,
+				D9B206151ED1B56F00F5BE53 /* Result.framework in Frameworks */,
+				D9B206161ED1B56F00F5BE53 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +79,7 @@
 			children = (
 				D9B205E21ED190F900F5BE53 /* Twidder */,
 				D9B205E11ED190F900F5BE53 /* Products */,
+				D9B2060E1ED1B56E00F5BE53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				D9B205F61ED192E000F5BE53 /* App */,
+				D9B2061D1ED1D98000F5BE53 /* Networking */,
 				D9B205F81ED192E000F5BE53 /* Resources */,
+				D9B2061A1ED1D53200F5BE53 /* Utils */,
 				D9B205FF1ED192E000F5BE53 /* Views */,
 			);
 			path = Twidder;
@@ -86,9 +126,62 @@
 		D9B205FF1ED192E000F5BE53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D9B206181ED1B60D00F5BE53 /* MapViewModel.swift */,
 				D9B206001ED192E000F5BE53 /* MapViewController.swift */,
+				D9B206201ED1E82400F5BE53 /* LocationButton.swift */,
+				D9E788C71ED3038000C7898B /* TwidderPointAnnotation.swift */,
+				D9E788C91ED3178A00C7898B /* TwidderPinAnnotationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D9B2060E1ED1B56E00F5BE53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D93F56561ED24A1C0025E814 /* Unbox.framework */,
+				D9B2060F1ED1B56F00F5BE53 /* ReactiveCocoa.framework */,
+				D9B206101ED1B56F00F5BE53 /* ReactiveSwift.framework */,
+				D9B206111ED1B56F00F5BE53 /* Result.framework */,
+				D9B206121ED1B56F00F5BE53 /* OAuthSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9B2061A1ED1D53200F5BE53 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9B206241ED2020E00F5BE53 /* AlertData.swift */,
+				D9E788C51ED2BE1F00C7898B /* LocationService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D9B2061D1ED1D98000F5BE53 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D9E788B91ED2BE1100C7898B /* API */,
+				D9E788BB1ED2BE1100C7898B /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D9E788B91ED2BE1100C7898B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D9E788BA1ED2BE1100C7898B /* TwitterAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D9E788BB1ED2BE1100C7898B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9E788BC1ED2BE1100C7898B /* Geolocation.swift */,
+				D9E788BD1ED2BE1100C7898B /* Statuses.swift */,
+				D9E788BE1ED2BE1100C7898B /* Tweet.swift */,
+				D9E788BF1ED2BE1100C7898B /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +195,7 @@
 				D9B205DD1ED190F900F5BE53 /* Frameworks */,
 				D9B205DE1ED190F900F5BE53 /* Resources */,
 				D9B205F51ED191DB00F5BE53 /* Swiftlint */,
+				D9B206171ED1B57A00F5BE53 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +268,25 @@
 			shellPath = /bin/sh;
 			shellScript = "$SRCROOT/scripts/swift-lint.sh";
 		};
+		D9B206171ED1B57A00F5BE53 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Unbox.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,9 +294,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E788C11ED2BE1100C7898B /* Geolocation.swift in Sources */,
+				D9E788C01ED2BE1100C7898B /* TwitterAPI.swift in Sources */,
+				D9E788C31ED2BE1100C7898B /* Tweet.swift in Sources */,
+				D9E788C21ED2BE1100C7898B /* Statuses.swift in Sources */,
+				D9B206211ED1E82400F5BE53 /* LocationButton.swift in Sources */,
 				D9B206081ED1976000F5BE53 /* AppCoordinator.swift in Sources */,
+				D9B206191ED1B60D00F5BE53 /* MapViewModel.swift in Sources */,
 				D9B206061ED192E000F5BE53 /* MapViewController.swift in Sources */,
+				D9E788C61ED2BE1F00C7898B /* LocationService.swift in Sources */,
+				D9E788CA1ED3178A00C7898B /* TwidderPinAnnotationView.swift in Sources */,
+				D9E788C81ED3038000C7898B /* TwidderPointAnnotation.swift in Sources */,
 				D9B2060A1ED1995000F5BE53 /* ViewControllers.swift in Sources */,
+				D9B206251ED2020E00F5BE53 /* AlertData.swift in Sources */,
+				D9E788C41ED2BE1100C7898B /* User.swift in Sources */,
 				D9B206011ED192E000F5BE53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +426,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X8599YRMX6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Twidder/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -316,6 +444,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X8599YRMX6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Twidder/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
