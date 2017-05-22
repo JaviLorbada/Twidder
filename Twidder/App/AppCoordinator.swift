@@ -37,6 +37,13 @@ struct ApplicationCoordinator: Coordinator {
     return true
   }
   
+  func showAlert(with data: AlertData) {
+    let alert = UIAlertController(title: data.title, message: data.message, preferredStyle: .alert)
+    let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default)
+    alert.addAction(okAction)
+    rootViewController.present(alert, animated: true)
+  }
+  
   // MARK: - Private
   private func prepareAndPush(viewController: ViewControllers, animated: Bool) {
     let view = viewController.view()
